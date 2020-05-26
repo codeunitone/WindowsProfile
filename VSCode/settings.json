@@ -1,0 +1,12 @@
+{
+	"editor.renderWhitespace": "all",
+	"editor.formatOnSave": false,
+	"diffEditor.renderSideBySide": false,
+	"workbench.colorTheme": "SMYCK",
+	"git.autofetch": true,
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"workbench.iconTheme": "material-icon-theme",
+	"window.zoomLevel": 1
+}
