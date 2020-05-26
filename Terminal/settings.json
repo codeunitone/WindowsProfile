@@ -1,0 +1,166 @@
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+{
+	"$schema": "https://aka.ms/terminal-profiles-schema",
+	"defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+	"initialCols": 170,
+	"initialRows": 50,
+	"profiles": {
+		"defaults": {
+			"colorScheme": "SMYCK",
+			"fontFace": "Hack",
+			"fontSize": 10
+		},
+		"list": [
+			{
+				// Make changes here to the powershell.exe profile
+				"guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+				"name": "Windows PowerShell",
+				"commandline": "powershell.exe",
+				"hidden": false
+			},
+			{
+				// Make changes here to the cmd.exe profile
+				"guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+				"name": "cmd",
+				"commandline": "cmd.exe",
+				"hidden": false
+			},
+			{
+				"guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+				"hidden": false,
+				"name": "Azure Cloud Shell",
+				"source": "Windows.Terminal.Azure"
+			},
+			{
+				"guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+				"hidden": false,
+				"name": "PowerShell",
+				"source": "Windows.Terminal.PowershellCore"
+			},
+			{
+				"guid": "{63e31163-583f-5850-9c1e-24e227dd2da9}",
+				"hidden": false,
+				"name": "PowerShell (dotnet global)",
+				"source": "Windows.Terminal.PowershellCore"
+			},
+			{
+			    "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+			    "hidden": false,
+			    "name": "Ubuntu",
+			    "source": "Windows.Terminal.Wsl"
+			}
+		]
+	},
+	// Add custom color schemes to this array
+	"schemes": [
+		{
+			"name": "Dracula",
+			"background": "#272935",
+			"black": "#272935",
+			"blue": "#BD93F9",
+			"brightBlack": "#AAAAAA",
+			"brightBlue": "#BD93F9",
+			"brightCyan": "#8BE9FD",
+			"brightGreen": "#50FA7B",
+			"brightPurple": "#FF79C6",
+			"brightRed": "#FF5555",
+			"brightWhite": "#FFFFFF",
+			"brightYellow": "#F1FA8C",
+			"cyan": "#6272A4",
+			"foreground": "#F8F8F2",
+			"green": "#3bc063",
+			"purple": "#6272A4",
+			"red": "#FF5555",
+			"white": "#F8F8F2",
+			"yellow": "#FFB86C"
+		},
+		{
+			"name": "Afterglow",
+			"black": "#151515",
+			"red": "#ac4142",
+			"green": "#7e8e50",
+			"yellow": "#e5b567",
+			"blue": "#6c99bb",
+			"purple": "#9f4e85",
+			"cyan": "#7dd6cf",
+			"white": "#d0d0d0",
+			"brightBlack": "#505050",
+			"brightRed": "#ac4142",
+			"brightGreen": "#7e8e50",
+			"brightYellow": "#e5b567",
+			"brightBlue": "#6c99bb",
+			"brightPurple": "#9f4e85",
+			"brightCyan": "#7dd6cf",
+			"brightWhite": "#f5f5f5",
+			"background": "#212121",
+			"foreground": "#d0d0d0"
+		},
+		{
+			"name": "Breeze",
+			"black": "#31363b",
+			"red": "#ed1515",
+			"green": "#11d116",
+			"yellow": "#f67400",
+			"blue": "#1d99f3",
+			"purple": "#9b59b6",
+			"cyan": "#1abc9c",
+			"white": "#eff0f1",
+			"brightBlack": "#7f8c8d",
+			"brightRed": "#c0392b",
+			"brightGreen": "#1cdc9a",
+			"brightYellow": "#fdbc4b",
+			"brightBlue": "#3daee9",
+			"brightPurple": "#8e44ad",
+			"brightCyan": "#16a085",
+			"brightWhite": "#fcfcfc",
+			"background": "#31363b",
+			"foreground": "#eff0f1"
+		},
+		{
+			"name": "Chalkboard",
+			"black": "#000000",
+			"red": "#c37372",
+			"green": "#72c373",
+			"yellow": "#c2c372",
+			"blue": "#7372c3",
+			"purple": "#c372c2",
+			"cyan": "#72c2c3",
+			"white": "#d9d9d9",
+			"brightBlack": "#323232",
+			"brightRed": "#dbaaaa",
+			"brightGreen": "#aadbaa",
+			"brightYellow": "#dadbaa",
+			"brightBlue": "#aaaadb",
+			"brightPurple": "#dbaada",
+			"brightCyan": "#aadadb",
+			"brightWhite": "#ffffff",
+			"background": "#29262f",
+			"foreground": "#d9e6f2"
+		},
+		{
+			"name": "SMYCK",
+			"background": "#1B1B1B",
+			"black": "#000000",
+			"blue": "#4E90A7",
+			"brightBlack": "#5D5D5D",
+			"brightBlue": "#9CD9F0",
+			"brightCyan": "#77DFD8",
+			"brightGreen": "#CDEE69",
+			"brightPurple": "#FBB1F9",
+			"brightRed": "#E09690",
+			"brightWhite": "#F7F7F7",
+			"brightYellow": "#FFE377",
+			"cyan": "#218693",
+			"foreground": "#F8F8F8",
+			"green": "#8EB33B",
+			"purple": "#C8A0D1",
+			"red": "#C75646",
+			"white": "#B0B0B0",
+			"yellow": "#D0B03C"
+		}
+	],
+	// Add any keybinding overrides to this array.
+	// To unbind a default keybinding, set the command to "unbound"
+	"keybindings": []
+}
