@@ -8,8 +8,8 @@ if (Test-Path($ChocolateyProfile)) {
 Write-Host 'Loading posh-git'
 Import-Module posh-git
 
-Write-Host 'Loading oh-my-posh'
-Import-Module oh-my-posh
-
-Write-Host 'Set Theme'
-Set-Theme Paradox
+# Set Promt
+$GitPromptSettings.DefaultPromptAbbreviateHomeDirectory = $true
+$GitPromptSettings.DefaultPromptBeforeSuffix.Text = '`n$([DateTime]::now.ToString("YYYY-MM-dd HH:mm:ss"))'
+$GitPromptSettings.DefaultPromptBeforeSuffix.ForegroundColor = 0x808080
+$GitPromptSettings.DefaultPromptPath.ForegroundColor = 0xFFA500
