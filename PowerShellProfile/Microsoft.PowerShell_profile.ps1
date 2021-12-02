@@ -10,6 +10,6 @@ Import-Module posh-git
 
 # Set Promt
 $GitPromptSettings.DefaultPromptAbbreviateHomeDirectory = $true
-$GitPromptSettings.DefaultPromptBeforeSuffix.Text = '`n$([DateTime]::now.ToString("YYYY-MM-dd HH:mm:ss"))'
+$GitPromptSettings.DefaultPromptBeforeSuffix.Text = '`n$([DateTime]::now.ToString("yyyy-MM-dd HH:mm"))'
 $GitPromptSettings.DefaultPromptBeforeSuffix.ForegroundColor = 0x808080
 $GitPromptSettings.DefaultPromptPath.ForegroundColor = 0xFFA500
