@@ -1,19 +1,21 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": [],
-    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "defaultProfile": "{5fb123f1-af88-5b5c-8953-d14a8def1978}",
     "initialCols": 170,
     "initialRows": 50,
     "profiles": 
     {
         "defaults": 
         {
-            "colorScheme": "Campbell",
+            "acrylicOpacity": 0.5,
+            "colorScheme": "One Half Dark (modded)",
             "font": 
             {
-                "face": "Hack",
+                "face": "Hack NF",
                 "size": 12
-            }
+            },
+            "useAcrylic": true
         },
         "list": 
         [
@@ -46,6 +48,12 @@
                 "hidden": false,
                 "name": "Ubuntu",
                 "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{5fb123f1-af88-5b5c-8953-d14a8def1978}",
+                "hidden": false,
+                "name": "PowerShell 7",
+                "source": "Windows.Terminal.PowershellCore"
             }
         ]
     },
@@ -206,6 +214,29 @@
             "foreground": "#DCDFE4",
             "green": "#98C379",
             "name": "One Half Dark",
+            "purple": "#C678DD",
+            "red": "#E06C75",
+            "selectionBackground": "#FFFFFF",
+            "white": "#DCDFE4",
+            "yellow": "#E5C07B"
+        },
+        {
+            "background": "#001B26",
+            "black": "#282C34",
+            "blue": "#61AFEF",
+            "brightBlack": "#5A6374",
+            "brightBlue": "#61AFEF",
+            "brightCyan": "#56B6C2",
+            "brightGreen": "#98C379",
+            "brightPurple": "#C678DD",
+            "brightRed": "#E06C75",
+            "brightWhite": "#DCDFE4",
+            "brightYellow": "#E5C07B",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#56B6C2",
+            "foreground": "#DCDFE4",
+            "green": "#98C379",
+            "name": "One Half Dark (modded)",
             "purple": "#C678DD",
             "red": "#E06C75",
             "selectionBackground": "#FFFFFF",
@@ -396,5 +427,6 @@
             "white": "#E5E9F0",
             "yellow": "#EBCB8B"
         }
-    ]
+    ],
+    "useAcrylicInTabRow": true
 }
