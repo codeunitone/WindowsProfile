@@ -1,19 +1,13 @@
 $ErrorActionPreference = "Stop"
 
 $ProfileFolders = @(
-	$(Join-Path $Home -ChildPath 'Documents\WindowsPowerShell')
-	$(Join-Path $Home -ChildPath 'Documents\PowerShell')
+    $(Join-Path $Home -ChildPath 'Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1')
+    $(Join-Path $Home -ChildPath 'Documents\PowerShell\Microsoft.PowerShell_profile.ps1')
 )
 
-foreach ($ProfileFolderPath in $ProfileFolders) {
-	if (Test-Path $ProfileFolderPath) {
-		$ProfileFolderObj = Get-Item $ProfileFolderPath
-		if (($ProfileFolderObj.Attributes -band [IO.FileAttributes]::ReparsePoint)) {
-			(get-item $ProfileFolderPath).Delete()
-		}
-		else {
-			Move-Item $ProfileFolderPath "$ProfileFolderPath-backup"
-		}
-	}
-	New-Item -Path $ProfileFolderPath -ItemType SymbolicLink -Value $PSScriptRoot
+foreach ($Folder in $ProfileFolders) {
+    if (!(Test-Path $Folder)) {
+        New-Item -Path $Folder -ItemType File
+    }
+    Add-Content -Path $Folder -Value $('. ' + $(Join-Path $PSScriptRoot -ChildPath 'user_profile.ps1'))
 }
