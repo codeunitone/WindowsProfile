@@ -1,5 +1,9 @@
+# Terminal-Icons
 Import-module Terminal-Icons
+
+# Posh-Git
 Import-Module Posh-Git
+$env:POSH_GIT_ENABLED = $true
 
 # PSReadLine
 Import-Module PSReadLine
