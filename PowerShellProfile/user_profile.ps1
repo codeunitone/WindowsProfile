@@ -14,3 +14,6 @@ Set-PSReadLineOption -PredictionSource History
 Import-Module oh-my-posh
 $omp_config = $(Join-Path $PSScriptRoot -ChildPath 'oh-my-posh\codeunitone.omp.json')
 oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
+
+# Aliases
+Set-Alias -Name ads -Value $(Join-Path $HOME -ChildPath 'AppData\Local\Programs\Azure Data Studio\azuredatastudio.exe')
