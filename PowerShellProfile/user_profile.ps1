@@ -17,7 +17,7 @@ oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
 
 # Aliases
 Set-Alias -name vim -Value nvim
-Set-Alias -Name ads -Value $(Join-Path $HOME -ChildPath 'AppData\Local\Programs\Azure Data Studio\azuredatastudio.exe')
+Set-Alias -Name ads -Value $(Join-Path $HOME -ChildPath 'scoop\apps\azuredatastudio\current\azuredatastudio.exe')
 
 # Functions
 function start-notes {
