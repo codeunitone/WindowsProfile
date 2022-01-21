@@ -23,3 +23,10 @@ Set-Alias -Name ads -Value $(Join-Path $HOME -ChildPath 'scoop\apps\azuredatastu
 function start-notes {
     code "$HOME\Resilio Sync\Documents\Notes"
 }
+
+function UpdateRepos {
+    Get-Childitem $HOME/Repositories | foreach-object { 
+        Write-Host "Updating $_.Name" -f cyan;
+        git -C $_.fullname pull --rebase
+    }
+}
