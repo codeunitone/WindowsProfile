@@ -24,6 +24,10 @@ function start-notes {
     code "$HOME\Resilio Sync\Documents\Notes"
 }
 
+function start-dendron {
+    code "$HOME\Resilio Sync\Documents\dendron"
+}
+
 function UpdateRepos {
     Get-Childitem $HOME/Repositories | foreach-object { 
         Write-Host "Updating $_.Name" -f cyan;
