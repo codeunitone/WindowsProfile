@@ -5,8 +5,6 @@
 The profile is not very smart yet and is not checking if any modules which it is importing is even installed on the machine.
 You have to install the depending modules manualy before installing the profile.
 
-* [Font: Hack from Nerd Fonts](https://www.nerdfonts.com/)
-* [Font: DaddyTimeMono NF](https://www.nerdfonts.com/)
 * Module: posh-git
 * Module: oh-my-posh
 * Module: Terminal-Icon
