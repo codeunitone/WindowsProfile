@@ -1,35 +1,56 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [],
-    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "initialCols": 170,
-    "initialRows": 50,
-    "profiles": 
-    {
-        "defaults": 
+    "actions": [
         {
-            "acrylicOpacity": 0.5,
+            "command": {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
+        }
+    ],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "profiles": {
+        "defaults": {
             "colorScheme": "One Half Dark (modded)",
-            "font": 
-            {
-                "face": "Hack NF",
+            "font": {
+                "face": "DaddyTimeMono NF",
                 "size": 12
             },
+            "opacity": 80,
             "useAcrylic": true
         },
-        "list": 
-        [
+        "list": [
             {
-                "commandline": "powershell.exe",
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
             },
             {
-                "commandline": "cmd.exe",
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
-                "name": "cmd"
+                "name": "Command Prompt"
             },
             {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
@@ -38,66 +59,20 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
                 "source": "Windows.Terminal.PowershellCore"
-            },
-            {
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
-    "schemes": 
-    [
-        {
-            "background": "#212121",
-            "black": "#151515",
-            "blue": "#6C99BB",
-            "brightBlack": "#505050",
-            "brightBlue": "#6C99BB",
-            "brightCyan": "#7DD6CF",
-            "brightGreen": "#7E8E50",
-            "brightPurple": "#9F4E85",
-            "brightRed": "#AC4142",
-            "brightWhite": "#F5F5F5",
-            "brightYellow": "#E5B567",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#7DD6CF",
-            "foreground": "#D0D0D0",
-            "green": "#7E8E50",
-            "name": "Afterglow",
-            "purple": "#9F4E85",
-            "red": "#AC4142",
-            "selectionBackground": "#FFFFFF",
-            "white": "#D0D0D0",
-            "yellow": "#E5B567"
-        },
-        {
-            "background": "#31363B",
-            "black": "#31363B",
-            "blue": "#1D99F3",
-            "brightBlack": "#7F8C8D",
-            "brightBlue": "#3DAEE9",
-            "brightCyan": "#16A085",
-            "brightGreen": "#1CDC9A",
-            "brightPurple": "#8E44AD",
-            "brightRed": "#C0392B",
-            "brightWhite": "#FCFCFC",
-            "brightYellow": "#FDBC4B",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#1ABC9C",
-            "foreground": "#EFF0F1",
-            "green": "#11D116",
-            "name": "Breeze",
-            "purple": "#9B59B6",
-            "red": "#ED1515",
-            "selectionBackground": "#FFFFFF",
-            "white": "#EFF0F1",
-            "yellow": "#F67400"
-        },
+    "schemes": [
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
@@ -143,52 +118,6 @@
             "selectionBackground": "#FFFFFF",
             "white": "#CCCCCC",
             "yellow": "#C19C00"
-        },
-        {
-            "background": "#29262F",
-            "black": "#000000",
-            "blue": "#7372C3",
-            "brightBlack": "#323232",
-            "brightBlue": "#AAAADB",
-            "brightCyan": "#AADADB",
-            "brightGreen": "#AADBAA",
-            "brightPurple": "#DBAADA",
-            "brightRed": "#DBAAAA",
-            "brightWhite": "#FFFFFF",
-            "brightYellow": "#DADBAA",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#72C2C3",
-            "foreground": "#D9E6F2",
-            "green": "#72C373",
-            "name": "Chalkboard",
-            "purple": "#C372C2",
-            "red": "#C37372",
-            "selectionBackground": "#FFFFFF",
-            "white": "#D9D9D9",
-            "yellow": "#C2C372"
-        },
-        {
-            "background": "#272935",
-            "black": "#272935",
-            "blue": "#BD93F9",
-            "brightBlack": "#AAAAAA",
-            "brightBlue": "#BD93F9",
-            "brightCyan": "#8BE9FD",
-            "brightGreen": "#50FA7B",
-            "brightPurple": "#FF79C6",
-            "brightRed": "#FF5555",
-            "brightWhite": "#FFFFFF",
-            "brightYellow": "#F1FA8C",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#6272A4",
-            "foreground": "#F8F8F2",
-            "green": "#3BC063",
-            "name": "Dracula",
-            "purple": "#6272A4",
-            "red": "#FF5555",
-            "selectionBackground": "#FFFFFF",
-            "white": "#F8F8F2",
-            "yellow": "#FFB86C"
         },
         {
             "background": "#282C34",
@@ -258,29 +187,6 @@
             "selectionBackground": "#FFFFFF",
             "white": "#FAFAFA",
             "yellow": "#C18301"
-        },
-        {
-            "background": "#1B1B1B",
-            "black": "#000000",
-            "blue": "#4E90A7",
-            "brightBlack": "#5D5D5D",
-            "brightBlue": "#9CD9F0",
-            "brightCyan": "#77DFD8",
-            "brightGreen": "#CDEE69",
-            "brightPurple": "#FBB1F9",
-            "brightRed": "#E09690",
-            "brightWhite": "#F7F7F7",
-            "brightYellow": "#FFE377",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#218693",
-            "foreground": "#F8F8F8",
-            "green": "#8EB33B",
-            "name": "SMYCK",
-            "purple": "#C8A0D1",
-            "red": "#C75646",
-            "selectionBackground": "#FFFFFF",
-            "white": "#B0B0B0",
-            "yellow": "#D0B03C"
         },
         {
             "background": "#002B36",
@@ -396,29 +302,6 @@
             "selectionBackground": "#FFFFFF",
             "white": "#C0C0C0",
             "yellow": "#808000"
-        },
-        {
-            "background": "#2E3440",
-            "black": "#3B4252",
-            "blue": "#81A1C1",
-            "brightBlack": "#4C566A",
-            "brightBlue": "#81A1C1",
-            "brightCyan": "#8FBCBB",
-            "brightGreen": "#A3BE8C",
-            "brightPurple": "#B48EAD",
-            "brightRed": "#BF616A",
-            "brightWhite": "#ECEFF4",
-            "brightYellow": "#EBCB8B",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#88C0D0",
-            "foreground": "#D8DEE9",
-            "green": "#A3BE8C",
-            "name": "nord",
-            "purple": "#B48EAD",
-            "red": "#BF616A",
-            "selectionBackground": "#FFFFFF",
-            "white": "#E5E9F0",
-            "yellow": "#EBCB8B"
         }
     ],
     "useAcrylicInTabRow": true
