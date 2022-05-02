@@ -1,20 +1,19 @@
 # Terminal
 
-This is the User Settings of my VC Code
+This is the User Settings of my VS Code
 
 ## Prerequisites
 
 You have to have VS Code installed
 
 Needed Extensions:
-- Bracket Pair Colorizer 2
-- Dracula Official
-- GitLense
-- Material Icon Theme
-- PowerShell
-- SQL Server (mssql)
-- ToDo Tree
-- waldo CRS AL Language Extension
+
+- [Indent Rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+- [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+- [Dendron](https://www.dendron.so/)
+- [Output Colorizer](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer)
+- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+- [PowerShell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
 
 ## Installation
 
