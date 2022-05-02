@@ -1,13 +1,40 @@
 {
+	"editor.fontFamily": "DaddyTimeMono NF",
 	"editor.renderWhitespace": "all",
 	"editor.formatOnSave": false,
-	"diffEditor.renderSideBySide": false,
-	"workbench.colorTheme": "Visual Studio Dark",
+	"editor.guides.bracketPairs": true,
+	"editor.bracketPairColorization.enabled": true,
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.editor.wrapTabs": true,
+	"workbench.colorCustomizations": {
+		"tab.activeBackground": "#426b4b"
+	},
+	"security.workspace.trust.untrustedFiles": "open",
+	"terminal.integrated.profiles.windows": {
+		"PowerShell": {
+			"source": "PowerShell",
+			"icon": "terminal-powershell"
+		},
+		"Command Prompt": {
+			"path": [
+				"${env:windir}\\Sysnative\\cmd.exe",
+				"${env:windir}\\System32\\cmd.exe"
+			],
+			"args": [],
+			"icon": "terminal-cmd"
+		},
+		"Git Bash": {
+			"source": "Git Bash"
+		},
+		"Windows PowerShell": {
+			"path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+		}
+	},
+	"terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+	"powershell.promptToUpdatePowerShell": false,
 	"git.autofetch": true,
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
 	},
-	"workbench.iconTheme": "material-icon-theme",
 	"window.zoomLevel": 1,
-	"security.workspace.trust.untrustedFiles": "open"
 }
