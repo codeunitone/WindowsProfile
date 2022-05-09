@@ -4,6 +4,9 @@
 	"editor.formatOnSave": false,
 	"editor.guides.bracketPairs": true,
 	"editor.bracketPairColorization.enabled": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.markdownlint": true
+	},
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.editor.wrapTabs": true,
 	"workbench.colorCustomizations": {
