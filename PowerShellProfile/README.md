@@ -10,6 +10,13 @@ You have to install the depending modules manualy before installing the profile.
 * Module: Terminal-Icon
 * Module: PSReadLine
 
+```PowerShell
+scoop install 'https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json'; `
+Install-Module -Name 'posh-git' -Scope CurrentUser -Force; `
+Install-Module -Name 'Terminal-Icons' -Scope CurrentUser -Force; `
+Install-Module -Name 'PSReadLine' -Scope CurrentUser -Force;
+```
+
 ## Installation
 
 Add the execution of file `user_profile.ps1` to your PowerShell Profile. Either manually or by running the `install.ps1` script.
