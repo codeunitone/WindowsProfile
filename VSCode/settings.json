@@ -39,5 +39,9 @@
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
 	},
+	"[sql]": {
+		"editor.defaultFormatter": "ms-mssql.mssql"
+	},
+	"diffEditor.ignoreTrimWhitespace": false,
 	"window.zoomLevel": 1,
 }
