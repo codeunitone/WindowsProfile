@@ -1,5 +1,5 @@
 {
-	"editor.fontFamily": "DaddyTimeMono NF",
+	"editor.fontFamily": "Hack Nerd Font",
 	"editor.renderWhitespace": "all",
 	"editor.formatOnSave": false,
 	"editor.guides.bracketPairs": true,
@@ -44,4 +44,17 @@
 	},
 	"diffEditor.ignoreTrimWhitespace": false,
 	"window.zoomLevel": 1,
+	"mssql.connections": [
+		{
+			"server": "gws-nav-dev.navision.misterspex.yy",
+			"database": "",
+			"authenticationType": "Integrated",
+			"profileName": "GWS-NAV-DEV",
+			"password": ""
+		}
+	],
+	"mssql.format.keywordCasing": "lowercase",
+	"mssql.format.datatypeCasing": "lowercase",
+	"mssql.intelliSense.lowerCaseSuggestions": true,
+	"powershell.codeFormatting.useCorrectCasing": true
 }
