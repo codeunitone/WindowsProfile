@@ -1,3 +1,5 @@
+write-host "Importing Windows Profile"
+
 # Terminal-Icons
 Import-module Terminal-Icons
 
