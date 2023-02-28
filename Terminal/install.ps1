@@ -1,6 +1,6 @@
 $ErrorActionPreference = "Stop"
 
-$SetingsFilePath = $(Join-Path $Home -ChildPath 'AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json')
+$SetingsFilePath = $(Join-Path $Home -ChildPath '\AppData\Local\Microsoft\Windows Terminal\settings.json')
 
 if (Test-Path $SetingsFilePath) {
 	$SetingsFilePathObject = Get-Item $SetingsFilePath

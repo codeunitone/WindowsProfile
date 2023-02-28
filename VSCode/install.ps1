@@ -1,6 +1,6 @@
 $ErrorActionPreference = "Stop"
 
-$SetingsFilePath = $(Join-Path $Home -ChildPath 'AppData\Roaming\Code\User\settings.json')
+$SetingsFilePath = $(Join-Path $Home -ChildPath 'scoop\apps\vscode\current\data\user-data\User\settings.json')
 
 if (Test-Path $SetingsFilePath) {
 	$SetingsFilePathObject = Get-Item $SetingsFilePath
