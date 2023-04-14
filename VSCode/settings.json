@@ -33,7 +33,7 @@
 			"path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
 		}
 	},
-	"terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+	"terminal.integrated.defaultProfile.windows": "PowerShell",
 	"powershell.promptToUpdatePowerShell": false,
 	"git.autofetch": true,
 	"[json]": {
@@ -56,5 +56,7 @@
 	"mssql.format.keywordCasing": "lowercase",
 	"mssql.format.datatypeCasing": "lowercase",
 	"mssql.intelliSense.lowerCaseSuggestions": true,
-	"powershell.codeFormatting.useCorrectCasing": true
+	"powershell.codeFormatting.useCorrectCasing": true,
+	"diffEditor.renderSideBySide": false,
+	"git.openRepositoryInParentFolders": "never"
 }
