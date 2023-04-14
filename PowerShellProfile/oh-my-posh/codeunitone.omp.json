@@ -15,8 +15,8 @@
           "type": "root"
         },
         {
-          "background": "#61AFEF",
-          "foreground": "#282C34",
+          "background": "#282C34",
+          "foreground": "#61AFEF",
           "powerline_symbol": "\ue0b0",
           "properties": {
             "style": "full"
@@ -62,8 +62,8 @@
           "type": "node"
         },
         {
-          "background": "#61AFEF",
-          "foreground": "#282C34",
+          "background": "#282C34",
+          "foreground": "#61AFEF",
           "invert_powerline": true,
           "leading_diamond": " \ue0b6",
           "style": "diamond",
